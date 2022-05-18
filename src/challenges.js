@@ -94,9 +94,24 @@ function decode(str) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+
+function techList(arr, str) {
+  if(arr.length == 0 || str.length == 0){
+    return 'Vazio!';
+  }else{
+    let sortedArray = arr.sort();
+    let object = [];
+    for (let index = 0; index <= arr.length-1; index+=1) {
+      let tech = arr[index];
+      object[index] = {
+        tech: tech,
+        name: str
+      }
+    }
+    return object;
+  }
 }
+
 
 module.exports = {
   calcArea,
