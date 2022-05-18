@@ -15,20 +15,21 @@ function calcArea(base, height) {
 
 // Desafio 3
 function splitSentence(string) {
-  let splittedStr = string.split(" ")
+  let splittedStr = string.split(" ");
   return splittedStr;
 }
 
 // Desafio 4
 function concatName(array) {
-  let firstNm = array[0], lastNm = array[array.length-1]
-  let concat = `${lastNm}, ${firstNm}`
-  return concat 
+  let firstNm = array[0], lastNm = array[array.length-1];
+  let concat = `${lastNm}, ${firstNm}`;
+  return concat;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let points = (wins * 3) + ties;
+  return points;
 }
 
 // Desafio 6
