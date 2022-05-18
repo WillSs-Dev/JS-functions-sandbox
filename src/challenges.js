@@ -19,10 +19,11 @@ function splitSentence(string) {
   return splittedStr;
 }
 
-
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(array) {
+  let firstNm = array[0], lastNm = array[array.length-1]
+  let concat = `${lastNm}, ${firstNm}`
+  return concat 
 }
 
 // Desafio 5
