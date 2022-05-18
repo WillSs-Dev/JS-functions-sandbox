@@ -74,16 +74,23 @@ function fizzBuzz(array) {
   }
   return resultArray;
 }
-// let teste = [2, 15, 7, 9, 45]
-// let resultado = fizzBuzz(teste)
-// console.log(resultado);
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(str) {
+  let encodedStr = ''
+  for (const key in str) {
+     encodedStr += str[key].replace('a', '1').replace('e', '2').replace('i', '3').replace('o', '4').replace('u', '5');
+  }
+  return encodedStr;
 }
-function decode() {
-  // seu código aqui
+
+
+function decode(str) {
+  let decodedStr = ''
+  for (const key in str) {
+     decodedStr += str[key].replace('1', 'a').replace('2', 'e').replace('3', 'i').replace('4', 'o').replace('5', 'u');
+  }
+  return decodedStr;
 }
 
 // Desafio 10
