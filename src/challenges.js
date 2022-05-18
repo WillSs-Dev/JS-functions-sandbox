@@ -1,22 +1,24 @@
 // Desafio 1
 function compareTrue(check, dbCheck) {
   if(check && dbCheck == true){
-    return true
+    return true;
   }else{
-    return false
+    return false;
   }
 }
 
 // Desafio 2
 function calcArea(base, height) {
-  let area = (base * height) / 2
-  return area
+  let area = (base * height) / 2;
+  return area;
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(string) {
+  let splittedStr = string.split(" ")
+  return splittedStr;
 }
+
 
 // Desafio 4
 function concatName() {
