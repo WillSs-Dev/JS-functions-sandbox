@@ -28,9 +28,35 @@ function generatePhoneNumber(array) {
 }
 
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  let isTriangle = false;
+  let sides = [lineA, lineB, lineC];
+  for(let i = 0; i < 3; i += 1){
+
+    if(Math.abs(sides[i]) < Math.abs(sides[i + 1] + sides[i + 2]) && Math.abs(sides[i]) > Math.abs(sides[i + 1] - sides[i + 2])){
+      
+      isTriangle = true;
+
+    }else if(Math.abs(sides[i]) < Math.abs(sides[i - 1] + sides[i - 2]) && Math.abs(sides[i]) > Math.abs(sides[i - 1] - sides[i - 2])){
+
+      isTriangle = true;
+
+    }else if(Math.abs(sides[i]) < Math.abs(sides[i + 1] + sides[i - 1]) && Math.abs(sides[i]) > Math.abs(sides[i + 1] - sides[i - 1])){
+
+      isTriangle = true;
+
+    }else{
+
+      isTriangle = false;
+
+    }
+  }
+
+  // console.log(isTriangle);
+  return isTriangle
+
 }
+triangleCheck(10, 13, 2)
 
 // Desafio 13
 function hydrate() {
